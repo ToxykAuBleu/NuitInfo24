@@ -7,7 +7,7 @@
 
   <div *ngFor="let tile of tiles" [style]="'background-color: ' + tile.color + ';'" class="w-full">
     <div (click)="clickText(tile)" *ngIf="!tile.isTextShown" class="flex w-full justify-center p-8 cursor-pointer">
-      <img [alt]="tile.title" [src]="'/icons/'+tile.imageSrc" class="size-24 bg-light p-2 rounded-full">
+      <img [alt]="tile.title" [src]="'/'+tile.imageSrc" class="size-24 bg-light p-2 rounded-full">
     </div>
     <div (click)="clickText(tile)" *ngIf="tile.isTextShown" class="w-full p-8">
       <h2 class="text-lg font-bold">{{ tile.title }}</h2>
