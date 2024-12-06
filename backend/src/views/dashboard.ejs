@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honeypot Dashboard</title>
+  <link rel="stylesheet" href="/styles/dashboard.css"> <!-- Link to external CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+  <h1>Honeypot Dashboard</h1>
+  <table border="1">
+    <tr>
+      <th>IP</th>
+      <th>Timestamp</th>
+
+      <th>Username</th> <!-- New column for username -->
+      <th>Password</th>
+    </tr>
+    <% attacks.forEach(attack => { %>
+      <tr>
+        <td><%= attack.ip %></td>
+        <td><%= attack.timestamp %></td>
+
+        <td><%= attack.username %></td> <!-- Display username -->
+        <td><%= attack.password %></td>
+      </tr>
+    <% }) %>
+  </table>
+  
