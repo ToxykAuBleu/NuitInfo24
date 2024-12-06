@@ -31,10 +31,14 @@ export class PopupComponent {
     "L’océan cache-t-il encore des trésors inconnus ?",
     "Les vagues dansent-elles sous la lune ?",
   ]
-  question: string = this.questions[Math.floor(Math.random() * this.questions.length)];
+  question = this.questions[Math.floor(Math.random() * this.questions.length)];
 
+generateQuestion() {
+    this.question = this.questions[Math.floor(Math.random() * this.questions.length)];
+}
 
   closePopup() {
     this.close.emit();
+    this.generateQuestion();
   }
 }
