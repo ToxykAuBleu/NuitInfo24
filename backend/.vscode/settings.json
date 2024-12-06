@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "romain-pinsolle.fr",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "ndi",
+            "database": "ndi",
+            "username": "ndi"
+        }
+    ]
+}
