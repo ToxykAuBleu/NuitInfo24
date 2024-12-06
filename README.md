@@ -1,59 +1,43 @@
-# NuitInfo24
+# Nuit de l'informatique 2024 - Corpean
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+> [!WARNING]  
+> Certaines fonctionnalités nécessitent la récupération d'information bloqués par les politiques CORS.
 
-## Development server
+# Installation
 
-To start a local development server, run:
+Après avoir cloné ce dépot sur votre ordinateur (`git clone https://github.com/ToxykAuBleu/NuitInfo24.git`), exécutez les commandes suivantes dans le répertoire:
 
-```bash
-ng serve
+```
+npm i
+npm run build
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+# Utilisation
 
-## Code scaffolding
+## Côté serveur
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Vous pouvez héberger le serveur en local avec des serveurs web (Apache, Nginx, etc.)
 
-```bash
-ng generate component component-name
-```
+## Côté client
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Ouvrez le fichier `index.html` dans un navigateur web.
 
-```bash
-ng generate --help
-```
+# Participants de l'équipe Les Infromagiciens
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+-   Étudiants informatique:
+    -   CONCHEZ-BOUEYTOU Robin [@ConchezRob](https://github.com/ConchezRob)
+    -   DESESSARD Estéban [@CarteSD](https://github.com/CarteSD)
+    -   DUFAU Lilou [@LilouDUFAU](https://github.com/LilouDUFAU)
+    -   ELDUAYEN Néo [@neoelduayen](https://github.com/neoelduayen)
+    -   ESPIET Lucas [@lucas-luchack](https://github.com/lucas-luchack)
+    -   FOISSAC Mathieu [@ToxykAuBleu](https://github.com/ToxykAuBleu)
+    -   HIRIBARREN TOUYA Adrien [@Alakamar](https://github.com/Alakamar)
+    -   MARSAN Louis [@Loulipong](https://github.com/Loulipong)
+    -   PINGARD Mattis [@Mattis40](https://github.com/Mattis40)
+    -   PINSOLLE Romain [@TuroYT](https://github.com/TuroYT)
+    -   RIVRAIS--NOWAKOWSKI Mathis [@TistouCode](https://github.com/TistouCode)
+-   Étudiants TC:
+    -   BARRIA Esteban
+    -   CAPDESSUS LURO Bartholomé
+    -   GOSSET Fanny
+    -   MORAIS Justine
