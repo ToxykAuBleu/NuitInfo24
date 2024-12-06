@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LetterShifterComponent } from './letter-shifter.component';
+import { EscapeButtonComponent } from './escape-button.component';
 
-describe('LetterShifterComponent', () => {
-  let component: LetterShifterComponent;
-  let fixture: ComponentFixture<LetterShifterComponent>;
+describe('EscapeButtonComponent', () => {
+  let component: EscapeButtonComponent;
+  let fixture: ComponentFixture<EscapeButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LetterShifterComponent]
+      imports: [EscapeButtonComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LetterShifterComponent);
+    fixture = TestBed.createComponent(EscapeButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

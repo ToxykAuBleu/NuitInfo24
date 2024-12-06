@@ -1,0 +1,17 @@
+<div
+  *ngIf="show"
+  class="popup fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center">
+  <div class="popup-content bg-white p-5 rounded-lg shadow-md">
+    <h2 class="text-lg font-bold mb-3">Alerte anti-virus :</h2>
+    <p class="mb-4">{{ question }}</p>
+    <div class="flex gap-3 justify-center">
+      <button (click)="closePopup()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Oui
+      </button>
+      <button (click)="closePopup()" class="bg-white px-4 py-2 rounded hover:bg-gray-100 border-2 border-gray-100">
+        Non
+      </button>
+    </div>
+
+  </div>
+</div>
