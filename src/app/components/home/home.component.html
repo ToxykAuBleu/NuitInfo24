@@ -1,0 +1,17 @@
+<section class="flex flex-col justify-center">
+  <div class="container mb-4">
+    <h1 class="text-2xl font-bold">Bienvenue sur Corpean</h1>
+    <p class="text-lg">Cliquez sur les icônes pour afficher comment les animaux de la mer correspondes à un organe
+      humain.</p>
+  </div>
+
+  <div *ngFor="let tile of tiles" [style]="'background-color: ' + tile.color + ';'" class="w-full">
+    <div (click)="clickText(tile)" *ngIf="!tile.isTextShown" class="flex w-full justify-center p-8 cursor-pointer">
+      <img [alt]="tile.title" [src]="'/'+tile.imageSrc" class="size-24 bg-light p-2 rounded-full">
+    </div>
+    <div (click)="clickText(tile)" *ngIf="tile.isTextShown" class="w-full p-8">
+      <h2 class="text-lg font-bold">{{ tile.title }}</h2>
+      <p>{{ tile.text }}</p>
+    </div>
+  </div>
+</section>
