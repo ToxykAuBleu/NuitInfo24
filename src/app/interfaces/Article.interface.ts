@@ -1,5 +1,7 @@
 export interface Article {
 	title: string;
-	date: string;
+	datePublication: string;
+	thumbnail?: string;
 	link: string;
+	description?: string;
 }

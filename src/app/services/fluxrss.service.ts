@@ -16,7 +16,7 @@ export class FluxRSSService {
 	 * @example FluxRSSService.getArticles(MER_GOVERNMENT_RSS, 0, 5).subscribe((articles) => {...});
 	 * // Renvoie les 5 premiers articles du flux RSS du site du gouvernement.
 	 */
-	getArticles(source: string, start = 0, limit = 5) {
+	getArticles(source: string, start = 0, limit = 5): Observable<Article[]> {
 		return new Observable((subscriber) => {
 			try {
 				if (!source) {
@@ -53,9 +53,23 @@ export class FluxRSSService {
 									link: article.getElementsByTagName(
 										"link",
 									)[0].textContent,
-									date: article.getElementsByTagName(
-										"pubDate",
-									)[0].textContent,
+									datePublication:
+										article.getElementsByTagName(
+											"pubDate",
+										)[0].textContent,
+									description: article
+										.getElementsByTagName("description")[0]
+										.textContent.replace(/<[^>]*>?/gm, "")
+										.replace(
+											/\(Feed generated with.*\)/,
+											"",
+										)
+										.trim(),
+									thumbnail: article
+										.getElementsByTagName(
+											"media:content",
+										)[0]
+										.getAttribute("url"),
 								});
 							}
 						}
