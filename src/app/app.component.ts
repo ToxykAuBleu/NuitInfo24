@@ -1,9 +1,10 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
+import { LetterShifterComponent } from './components/letter-shifter/letter-shifter.component';
 
 @Component({
 	selector: "app-root",
-	imports: [RouterOutlet],
+	imports: [RouterOutlet, LetterShifterComponent],
 	templateUrl: "./app.component.html",
 	styleUrl: "./app.component.scss",
 })
